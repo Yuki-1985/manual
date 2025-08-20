@@ -12,9 +12,9 @@ function App() {
       <div className="row">
         <Sidebar />
         <Routes>
-          <Route path="/" element={<Navigate to={`/manual/${menuData[0].id}`} replace />} />
-          <Route path="/manual/:categoryId" element={<DetailPage />} />
-          <Route path="/manual/:categoryId/:itemId" element={<SubDetailPage />} />
+          <Route path="/" element={<Navigate to={`/${menuData[0].id}`} replace />} />
+          <Route path="/:categoryId" element={<DetailPage />} />
+          <Route path="/:categoryId/:itemId" element={<SubDetailPage />} />
         </Routes>
       </div>
     </div>

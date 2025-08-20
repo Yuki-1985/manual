@@ -8,7 +8,7 @@ import {
   People,
   Building,
   ShieldLock,
-  Icon as BootstrapIcon, // Generic type
+  
 } from 'react-bootstrap-icons';
 
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {

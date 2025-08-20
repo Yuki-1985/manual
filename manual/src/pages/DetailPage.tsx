@@ -4,19 +4,19 @@ import { menuData } from '../data/menuData';
 import { Card, Row, Col, Button } from 'react-bootstrap';
 import {
   ChevronRight,
-  Sitemap, Globe, FileEarmarkText, FileEarmarkArrowDown, CashCoin,
+  Diagram3, Globe, FileText, FileArrowDown, CashCoin,
   PencilSquare, Bank, PersonVcard, ClockHistory, Calculator, HeartPulse,
-  FileEarmarkRichtext, CardChecklist, Archive, BuildingGear, ThreeDots,
-  FileEarmarkRuled, ShieldLock, Check2Square
+  FileRichtext, CardChecklist, Archive, BuildingGear, ThreeDots,
+  FileRuled, ShieldLock, Check2Square
 } from 'react-bootstrap-icons';
 
 const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
   // organization
-  'role-structure': Sitemap,
+  'role-structure': Diagram3,
   'services': Globe,
   // accounting
-  'billing-issue': FileEarmarkText,
-  'billing-receive': FileEarmarkArrowDown,
+  'billing-issue': FileText,
+  'billing-receive': FileArrowDown,
   'expenses': CashCoin,
   'journalizing': PencilSquare,
   'settlement': Bank,
@@ -26,13 +26,13 @@ const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = 
   'payroll': Calculator,
   'social-insurance': HeartPulse,
   // general-affairs
-  'contract-management': FileEarmarkRichtext,
+  'contract-management': FileRichtext,
   'service-subscription': CardChecklist,
   'asset-management': Archive,
   'facility-management': BuildingGear,
   'other': ThreeDots,
   // info-sys
-  'internal-rules': FileEarmarkRuled,
+  'internal-rules': FileRuled,
   'security': ShieldLock,
   'compliance': Check2Square,
 };
