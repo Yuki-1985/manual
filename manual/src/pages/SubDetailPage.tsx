@@ -57,6 +57,10 @@ const SubDetailPage = () => {
       <div className="border-bottom mb-3">
         {renderTitle()}
       </div>
+      <h4 className="fw-bold mt-3">【概要】</h4>
+      <div className="ps-4">
+        <p>{selectedItem.description}</p>
+      </div>
       {renderContent()}
     </main>
   );
